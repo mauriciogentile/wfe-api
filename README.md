@@ -1,13 +1,10 @@
 # wfe-api
-
-## Setup
-
+### Setup
 ``` js
 $W.setup({ url: "http://localhost/wfe/api", language: "en" });
 var workflow = $W.workflow(654);
 ```
-
-## Creation
+### Creation
 ``` js
 var createParams = {
     url: window.location.applicationPath,
@@ -28,7 +25,7 @@ return $W.template(5).createInstance(createParams)
     alert("Error creating workflow: " + err.statusText);
 });
 ```
-## Grant Access
+### Grant Access
 ``` js
 workflow.grantAccess([{
     users: ["domain\\johnm","domain\\marcos", "domain\\florr"],
@@ -42,8 +39,7 @@ workflow.grantAccess([{
     alert("Error granting permissions: " + err.statusText);
 });
 ```
-
-## Revoke Access
+### Revoke Access
 ``` js
 workflow.revokeAccess([{
     users: ["domain\\johnm","domain\\marcos", "domain\\florr"],
@@ -57,8 +53,7 @@ workflow.revokeAccess([{
     alert("Error granting permissions: " + err.statusText);
 });
 ```
-
-## Pipeline Actions
+### Pipeline Actions
 ``` js
 var wfe = (function () {
     var currentWorkflow = $W.workflow();
