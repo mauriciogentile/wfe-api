@@ -1,4 +1,4 @@
-$W.setup({ url: "http://localhost/wfe", language: "en" });
+$W.setup({ url: "http://localhost/wfe/api", language: "en" });
 var workflow = $W.workflow(6);
 
 workflow.grantAccess([{
