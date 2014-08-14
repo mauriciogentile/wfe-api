@@ -1,7 +1,7 @@
 ﻿jQuery.support.cors = true;
 
 var $W = $W || (function () {
-    var apiUrl = "http://localhost/api";
+    var apiUrl = "http://localhost/wfe/api";
     var language = "EN";
     var appName = "WFE";
     var callbacks = jQuery.Callbacks();
